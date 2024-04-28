@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://kit.fontawesome.com/1bbc98a78c.js" crossorigin="anonymous"></script>
+        <title>Ranked Calculator</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <span>
+            <i class="fa-solid fa-link"></i>
+            <a href="https://github.com/bluejynz" target="_blank">GitHub</a> | 
+            <i class="fa-solid fa-link"></i>
+            <a href="https://www.linkedin.com/in/danielafalk/" target="_blank">Linkedin</a> | 
+            <i class="fa-solid fa-link"></i>
+            <a href="https://bluejynz.github.io" target="_blank">Portfolio Web</a>
+        </span>
+        <div class="container">
+            <h1>Calculadora de Ranking</h1>
+            <form>
+                <label for="vit">Quantidade de vitórias:</label>
+                <input type="number" id="vit" name="vit" required />
+
+                <label for="def">Quantidade de derrotas:</label>
+                <input type="number" id="def" name="def" required />
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <div class="container">
+            <h2 id="result-text" class="hidden">
+                O Herói tem de saldo de ~~Tal~~ está no nível de ~~Tal~~
+            </h2>
+        </div>
+    </body>
+    <script src="./script.js"></script>
+</html>
